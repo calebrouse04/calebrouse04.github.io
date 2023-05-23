@@ -30,9 +30,6 @@
     opacity: 1;
   }
   
-.z-index{
-    z-index: 4;
-}
 /*Navbar*/
 .nav-link{
     color: var(--bg-secondary-dark);
@@ -174,7 +171,6 @@ body {
     height: 720px;
     overflow: hidden;
     border-bottom: 10px solid var(--bg-secondary-dark);
-    z-index: -3;
 }
 
   
@@ -186,13 +182,14 @@ video {
     z-index: -2;
 }
 
+
+
 .home-video-text-container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: -1;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -211,6 +208,7 @@ video {
 }
 
 .home-video-button {
+    display: inline-block;
     padding: 18.75px;
     width: 342.19px;
     box-shadow: 0px 7.8125px 7.8125px rgba(0, 0, 0, 0.25);
@@ -219,9 +217,10 @@ video {
     color: var(--bg-primary);
     border: none;
     font-size: 24px;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out; /* this will make the hover effect smoother */
-    z-index: -1;
 }
 
 .home-video-button:hover {
@@ -229,6 +228,7 @@ video {
     color: var(--bg-secondary-light);
     box-shadow: 0px 7.8125px 7.8125px rgba(0, 0, 0, 0.25);
 }
+
 
 
 #youtube{
@@ -589,7 +589,7 @@ a:hover .hover-text {
 }
 .flex-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 0px;
     margin: 60px 90px;
