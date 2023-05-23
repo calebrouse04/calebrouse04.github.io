@@ -75,3 +75,17 @@ bioButtons.forEach((button) => {
 });
 
 });
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      var os = $('.scroll-element').offset().top;
+      var ht = $('.scroll-element').height();
+      if (scroll > os - ht){
+        $('.scroll-element').addClass('appear');
+      } else {
+        $('.scroll-element').removeClass('appear');
+      }
+    });
+  });
+  

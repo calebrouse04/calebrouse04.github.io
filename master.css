@@ -20,6 +20,16 @@
         src: url('AnekMalayalam-VariableFont_wdth,wght.ttf') format('ExtraBold');
         font-weight: 800;
       }  
+/* scroll animation*/
+.scroll-element {
+    opacity: 1;
+    transition: opacity 0.2s ;
+  }
+  
+  .scroll-element.appear {
+    opacity: 1;
+  }
+  
 
 /*Navbar*/
 .nav-link{
