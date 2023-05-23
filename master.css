@@ -400,7 +400,7 @@ a:hover .hover-text {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   } 
 .home-row:hover {
-    animation: saturate-animation 300ms forwards;
+    animation: saturate-animation 500ms forwards;
   }
 @keyframes saturate-animation {
     100% {
@@ -687,21 +687,22 @@ a:hover .hover-text {
 }
 
 .belief-grid-container{
-    display: flex;
+    display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    align-items: center;
     column-gap: 45px;
     margin: 20px 8.8125em;
 }
 .belief-grid-section-left{
     display: grid;
-    grid-template-rows: 826px 509px 363px;
+    grid-template-rows: auto;
     row-gap: 40px;
     text-align: center;
 }
 .belief-grid-section-right{
     display: grid;
-    grid-template-rows: 398px 503px 328px;
+    grid-template-rows: auto;
     row-gap: 40px;
     text-align: center;
 }
@@ -741,13 +742,13 @@ a:hover .hover-text {
 }
 .accordion-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 40px;
     row-gap: 40px;
-    grid-template-rows: 1fr 50px;
+    grid-template-rows: 1fr ;
     justify-content: center;
     gap: 40px; /* Add 40px space between accordions */
-    margin: 40px;
+    margin: 40px 40px 40px 60px;
   }
   .accordion {
     display: grid; /* Distribute available space equally */
@@ -767,7 +768,7 @@ a:hover .hover-text {
     width: 100%; /* Set the width to 100% */
   }
   .accordion-item .accordion-body {
-    overflow: auto; /* Enable vertical scrolling if needed */
+    overflow: hidden; /* Enable vertical scrolling if needed */
   }
 .accordion{
     border: var(--green-border);
@@ -1083,11 +1084,22 @@ a:hover .hover-text {
         font-size: 80%;
     }
     .accordion-container{
-        grid-template-columns: 1fr;
+        position: relative;
     }
     .belief-grid-container{
-        display:grid;
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
+
+    }
+    .belief-grid-item p, .belief-grid-item li{
+        font-size: 16px;
+    }
+    .belief-grid-item h1{
+        font-size: 22px;
+    }
+    .belief-grid-item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
   }
