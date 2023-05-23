@@ -13,6 +13,7 @@
     --green-border: 5px solid var(--bg-secondary-light);
     --border-radius: 15px;
     --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 @font-face {
         font-family: 'Anek Malayalam Medium';
@@ -153,7 +154,69 @@ body {
 }   
 .extra-bold {
     font-family: 'YourCustomFont', sans-serif;
-}     
+}   
+.home-video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    border-bottom: 10px solid var(--bg-secondary-dark);
+}
+  
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.home-video-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.home-video-text {
+    font-family: 'Microsoft New Tai Lue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 84px;
+    color: var(--bg-primary);
+}
+
+.home-video-button {
+    padding: 18.75px;
+    width: 342.19px;
+    box-shadow: 0px 7.8125px 7.8125px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background-color: var(--bg-secondary-light);
+    color: var(--bg-primary);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* this will make the hover effect smoother */
+}
+
+.home-video-button:hover {
+    background-color: var(--bg-primary);
+    color: var(--bg-secondary-light);
+    box-shadow: 0px 7.8125px 7.8125px rgba(0, 0, 0, 0.25);
+}
+
+
 #youtube{
     width: 250px;
     height: 200px;
@@ -211,6 +274,8 @@ body {
   transform: scale(1.05);
 }
 .carousel-container{
+    margin: 20px;
+    margin-bottom:0px ;
     display: flex;
     justify-content: center;
     
@@ -888,7 +953,7 @@ a:hover .hover-text {
     .navbar{
         width: 100%;
         background-size: cover;
-        height: auto;
+        height: 10%;
         text-align: center;
         background-color: var(--bg-secondary-dark);
         color: var(--bg-secondary-light);
@@ -918,15 +983,19 @@ a:hover .hover-text {
         top: 80%; /* position right under the navbar */
         width: 100%; /* adjust width as necessary */
     }
+    .break{
+        display: none;
+    }
     .carousel{
-        width: 80%;
+        width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: auto;
         place-self: center;
         display: flex;
         justify-content: center; /* for horizontal alignment */
         align-items: center; /* for vertical alignment */
     }
+
     #services{
         width: 80%;
         margin: auto;
