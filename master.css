@@ -627,7 +627,6 @@ a:hover .hover-text {
 .vision-container{
     display: grid;
     align-items: center;
-    justify-content: space-evenly;
     gap: 20px;
     text-align: center;
 }
@@ -642,8 +641,8 @@ a:hover .hover-text {
     padding: 10px;
     align-items: center;
     text-align: center;
-    margin-left: 375px;
-    margin-right: 375px;
+    margin-left: 20%;
+    margin-right: 20%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .key-statements h3{
@@ -658,8 +657,8 @@ a:hover .hover-text {
     border-radius: 15px;
     font-family: helvetica;
     font-weight: bold;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 25%;
+    margin-right: 25%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .belief-grid-sentence{
@@ -688,11 +687,12 @@ a:hover .hover-text {
 
 .belief-grid-container{
     display: grid;
+    grid-auto-flow: dense;
     justify-content: center;
     grid-template-columns: repeat(2, minmax(200px,1fr));
     align-items: center;
-    column-gap: 45px;
-    margin: 20px 8.8125em;
+    column-gap: 2.1825em;
+    margin: 20px 5%;
 }
 .belief-grid-section-left{
     display: grid;
@@ -742,7 +742,7 @@ a:hover .hover-text {
 }
 .accordion-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     row-gap: 40px;
     grid-template-rows: 1fr ;
@@ -961,6 +961,11 @@ a:hover .hover-text {
         width: 20%;
         height: 20%;
     }
+    .logo-image {
+        max-width: 100%;
+        height: auto;
+      }
+      
     .navbar{
         width: 100%;
         background-size: cover;
@@ -978,6 +983,12 @@ a:hover .hover-text {
         height: auto;
         background-color: var(--bg-secondary-dark);
     }
+  .container-fluid{
+    display: flex;
+  }
+  .navbar-brand{
+    width: scale(.7);
+  }
     .dropdown-menu {
         position: absolute;
         transform: translate3d(-0%, 0, 0);
@@ -994,9 +1005,39 @@ a:hover .hover-text {
         top: 80%; /* position right under the navbar */
         width: 100%; /* adjust width as necessary */
     }
+    .line{
+        margin:10px;
+    }
     .break{
         display: none;
     }
+    .footer{
+        width: 100%;
+    }
+    .parentfootercolumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footercolumn {
+        text-align: center; /* Aligns the text to center */
+    }
+    #footerimg{
+        display: none;
+    }
+    .footer-right p{
+        text-align: center;
+        line-height: 20px;
+        margin: 0; /* Removes the margin on the right */
+    }
+    /*
+    ==========================================
+                        HOME
+    ==========================================
+    */
+
     .carousel{
         width: 100%;
         height: auto;
@@ -1042,40 +1083,29 @@ a:hover .hover-text {
     .hover-text{
         font-size: 22px
     }
-
-    .line{
-        margin:10px;
-    }
-    .footer{
-        width: 100%;
-    }
-    .parentfootercolumn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .footercolumn {
-        text-align: center; /* Aligns the text to center */
-    }
-    #footerimg{
-        display: none;
-    }
-    .footer-right p{
-        text-align: center;
-        line-height: 20px;
-        margin: 0; /* Removes the margin on the right */
-    }
+/*
+==========================================
+                STAFF
+==========================================*/
     #staffCards{
         grid-template-columns: 2fr;
     }
+
+/*
+==========================================
+                BELIEFS
+==========================================*/
+
     .belief-grid-sentence{
         grid-template-columns: 1fr
     }
     .belief-text{
         display: flex;
         height:auto;
+    }
+    .key-statements{
+        margin-right: auto;
+        margin-left: auto;
     }
     .belief-text p{
         font-size: 16px;    
@@ -1101,5 +1131,11 @@ a:hover .hover-text {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    .belief-text{
+      margin: auto 10%;
+    }
+    .accordion-container{
+        grid-template-columns: 1fr;
     }
   }
