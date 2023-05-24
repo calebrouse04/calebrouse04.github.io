@@ -957,6 +957,10 @@ a:hover .hover-text {
     margin-left: 100px;
   }
 /*Ministries*/
+/*==================================
+        RESPONSIVE DESIGN
+====================================*/
+
 
 @media only screen and (max-width: 1000px){
 
@@ -1091,6 +1095,9 @@ a:hover .hover-text {
     }
     .home-grid-right{
         display: none !important;
+    }
+    .home-video-container{
+        padding-bottom: 75%;
     }
 /*
 ==========================================
