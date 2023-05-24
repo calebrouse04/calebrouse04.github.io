@@ -19,9 +19,8 @@
   Teal(87%) = #8be2e2 
   Drop Down Navy(85%) = #003355 
   Blank Color = #d9d9d9
-
 -->
-<!--begining of navbar-->
+<!--NAVBAR-->
 <nav class="navbar navbar-expand-md bg-light" >
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
@@ -81,6 +80,10 @@
 <!--background video-->
 <div class="home-video-container">
   <video autoplay muted loop>
+
+    <!------------------------------ 
+          B-ROLL CHANGE HERE
+    ------------------------------------>
     <source src="All Pictures/Worship BROLL.mp4" type="video/mp4">
     <!-- Add additional source elements for other video formats if needed -->
   </video>
@@ -91,136 +94,139 @@
   </div>
 </div>
 
-
-
-<!--Youtube video starts-->
-<!--section 2 start-->
+    <!------------------------------ 
+          CAROUSEL CHANGE HERE
+    ------------------------------------>
 <div class="carousel-container">
-<div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
-  <div class="carousel-indicators ">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+  <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+    <div class="carousel-indicators ">
+    <!--
+      FOR EVERY CAROUSEL ITEM COPY AND PASTE LINE 108 and change the numbers on the line accordingly
+    -->
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+   <!--
+      FOR EVERY CAROUSEL ITEM COPY AND PASTE LINES 117-119 AND CHANGE THE FILE PATH
+      (You can pastor the lines)
+    -->
   <div class="carousel-inner">
+     <!--
+      SLIDE 1 
+    -->
     <div class="carousel-item active">
       <img src="All Pictures/Streaming Announcement Slide.png" class="d-block w-100" alt="...">
     </div>
+     <!--
+      SLIDE 2 
+    -->
     <div class="carousel-item">
       <img src="All Pictures/Wednesday Youth.png" class="d-block w-100" alt="...">
     </div>
+     <!--
+      SLIDE 3 
+    -->
     <div class="carousel-item">
       <img src="All Pictures/WIFI Password Slide.png" class="d-block w-100" alt="...">
     </div>
+     <!--
+      END OF SLIDES
+    -->
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
+  </div>
 </div>
-</div>
-<!--Youtube video ends-->
 <br>
-<!--line break start-->
-  <div class="line">
 
-  </div>
-<!--line break end-->
-<div class="scroll-element" data-aos="fade-left" data-aos-duration="1000" >
+<!--LINE-->
+<div class="line"></div>
 
+  <!--IGNORE THIS-->
+<div class="scroll-element" data-aos="fade-left" data-aos-duration="1000">
 
-<!--container start-->
+<!--GRID CONTAINER-->
 <div class= 'home-grid-container'>
+  <!--LEFT SIDE GRID-->
   <div class="home-grid-left">
-  <!--begining of service times-->
-  <div id="service-container">
-  <div class="card" id="services" >
-    <p><strong>Sundays at 8:30 and 10:30AM</strong></p>
-    <p>639 S. Water Ave.<br>Gallatin, TN 37066</p>
-<!--end of service times-->
+  <!--SERVICE SECTIONS-->
+    <div id="service-container">
+      <div class="card" id="services" >
+        <p><strong>Sundays at 8:30 and 10:30AM</strong></p>
+        <p>639 S. Water Ave.<br>Gallatin, TN 37066</p>
+      </div>
+    </div>
+    <!--MEDIA SUBROW-->
+    <div class="subrow">
+  <!--MEDIA FLEX CONTAINER-->
+      <div class="subrow-flex">
+    <!--YOUTUBE CONTAINER-->
+        <div class="card column-media card1" id = 'youtube-container'>
+          <a href="https://www.youtube.com/@FaithChurchGallatin" target="_blank">
+            <img src="All Pictures/Home Page - Youtube Icon.png" id = 'youtube' class="card-img" alt="...">
+          </a>
+        </div>
+  <!--FACEBOOK CONTAINER-->
+        <div class="card column-media card1" id = 'facebook-container'>
+          <a href = 'https://www.facebook.com/faithchurchgallatin' target="_blank">
+            <img src="All Pictures/Home Page - Facebook Icon.png" id = 'facebook'class="card-img" alt="...">
+          </a>
+        </div>
+  <!--EMAIL CONTAINER-->
+        <div class="card card1 column-media" id="email-container">
+          <a href="mailto:office@faithchurchgallatin.org" target="_blank">
+            <img src="All Pictures/Home Page - Email Icon.png" id = 'homeemail' class="card-img" alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  <div class="subrow">
-  <!--link to youtube start-->
-  <div class="subrow-flex">
-<div class="card column-media card1" id = 'youtube-container'>
-  <a href="https://www.youtube.com/@FaithChurchGallatin" target="_blank">
-    <img src="All Pictures/Home Page - Youtube Icon.png" id = 'youtube' class="card-img" alt="...">
-  </a>
-<!--link to youtube end-->
-</div>
-
-
-  <!--link to facebook start-->
-  <div class="card column-media card1" id = 'facebook-container'>
-    <a href = 'https://www.facebook.com/faithchurchgallatin' target="_blank">
-      <img src="All Pictures/Home Page - Facebook Icon.png" id = 'facebook'class="card-img" alt="...">
-    </a>
-<!--link to facebook end-->
-  </div>
-
-  <!--link to email start-->
-  <div class="card card1 column-media" id="email-container">
-    <a href="mailto:office@faithchurchgallatin.org" target="_blank">
-    <img src="All Pictures/Home Page - Email Icon.png" id = 'homeemail' class="card-img" alt="...">
-<!--link to email end-->
-    </a>
-  </div>
-</div>
-</div>
-</div>
-<div class="home-grid-right">
-  <!--begining of maps-->
-  <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.7672692705146!2d-86.4413098!3d36.37927240000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88643a9ec993908b%3A0x911f42ae3593bb6c!2sFaith%20Church%20of%20Gallatin!5e0!3m2!1sen!2sus!4v1671825127382!5m2!1sen!2sus" 
+    <div class="home-grid-right">
+  <!--MAPS-->
+    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.7672692705146!2d-86.4413098!3d36.37927240000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88643a9ec993908b%3A0x911f42ae3593bb6c!2sFaith%20Church%20of%20Gallatin!5e0!3m2!1sen!2sus!4v1671825127382!5m2!1sen!2sus" 
   allowfullscreen="" loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-  <!--end of maps-->
-        </iframe> 
+  referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<!--line break start-->
-  <div class="line"></div>
-<!--line break end-->
+<!--LINE-->
+<div class="line"></div>
 
-  <!--bottom row start-->
-    <div id = "bottomhomerow" >
-    
+<!--BOTTOM ROW-->
+<div id = "bottomhomerow" >
+<!--LINK TO NEW-->
     <a href="new.html#connect" class="image-link">
       <img class="img-thumbnail home-row " src="All Pictures/Home Page -  Connect Tile(color).jpg" alt="Image" >
-      <div class="text-overlay">
+        <div class="text-overlay">
           <p class="initial-text" >Connect</p>
           <p class="hover-text" >Tell us about yourself!</p>
-      </div>
-  </a>
-  
-
-  <a href="staff.html" class="image-link">
+        </div>
+    </a>
+<!--LINK TO STAFF-->
+    <a href="staff.html" class="image-link">
       <img class="img-thumbnail home-row " src="All Pictures/Home Page - Staff Tile(Color).jpeg" >
-      <div class="text-overlay">
+        <div class="text-overlay">
           <p class="initial-text" >Leadership</p>
           <p class="hover-text" >Get to know us!</p>
-      </div>
-  </a>
-  
-
-  
+        </div>
+    </a>
+<!--LINK TO GROUP LIFE-->
   <a href="#" class="image-link">
       <img class="img-thumbnail home-row" src="All Pictures/Home Page - Life Group(color).jpg" >
       <div class="text-overlay" >
-          <p class="initial-text" >Life Groups</p>
+          <p class="initial-text" >Group Life</p>
           <p class="hover-text" >Get plugged in!</p>
       </div>
   </a>
-  
-<!--row end-->
-    </div>
-
-
+</div>
   <br>
   <br>
   <br>
@@ -264,7 +270,7 @@
         <p>Missions</p>
         </a>
         <a href='missions.html#life'>
-        <p>Life Groups</p>
+        <p>Group Life</p>
         </a>
       </div>
       <div class="footercolumn">

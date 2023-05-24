@@ -1096,7 +1096,7 @@ a:hover .hover-text {
     .home-grid-right{
         display: none !important;
     }
-    .home-video-container{
+    video{
         padding-bottom: 75%;
     }
 /*
