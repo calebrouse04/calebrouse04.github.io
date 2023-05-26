@@ -21,7 +21,10 @@
         font-weight: 800;
       }  
 
-  
+*{
+    font-family: 'Microsoft New Tai Lue'
+}  
+
 /*Navbar*/
 
 
@@ -168,8 +171,6 @@ body {
     height: 580px;
     border-bottom: 10px solid var(--bg-secondary-dark);
 }
-
-  
 video {
     object-fit: cover;
     width: 100%;
@@ -177,9 +178,6 @@ video {
     position: absolute;
     z-index: -1;
 }
-
-
-
 .home-video-text-container{
     position: absolute;
     top: 50%;
@@ -959,6 +957,186 @@ a:hover .hover-text {
     margin-left: 100px;
   }
 /*Ministries*/
+#students-logo{
+    width: 480px;
+    height: auto;
+}
+
+.picture-head-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 520px;
+    border-bottom: 10px solid var(--bg-secondary-dark);
+}
+.picture-heads {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 65%;
+}
+.students-video-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-primary);
+    font-size: 32px;
+    text-shadow: 2px 2px black;
+}
+.students-video-text {
+    font-family: 'Microsoft New Tai Lue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 84px;
+    color: var(--bg-primary);
+}
+
+
+
+.students-grid-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+    grid-template-rows: auto;
+    margin: 40px 70px;
+    gap: 20px;
+    grid-template-areas: 'text pictures'
+                         'wednesday  steve'
+                         'announcements  steve';
+
+}
+.border-text{
+align-self: center;
+/* Auto layout */
+font-size: 22px;
+font-weight: 700;
+display: flex;
+justify-self: left;
+align-items: center;
+width: 500px;
+height: auto;
+text-align: center;
+
+
+}
+
+.border-text p{
+    padding: 5px;
+    border: 5px solid #85C529;
+    border-radius: 15px;
+}
+
+.students .carousel{
+    display: relative;
+    overflow: hidden;
+}
+.carousel{
+    overflow: hidden;
+}
+
+.students-picture{
+    width: 600px;
+
+    justify-content: center;
+    height: auto;
+
+    
+}
+
+.students-wednesday{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+}
+.students h2 {
+    color: var(--bg-secondary-dark);
+}
+.students h5 {
+    color: var(--bg-secondary-dark);
+    font-size: 22px;
+}
+
+.students-wednesday p {
+    font-family: 'Microsoft New Tai Lue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.students .carousel{
+
+    border: solid 5px var(--bg-secondary-dark);
+    border-radius: 15px;
+}
+
+.students-steve-container{
+    justify-self: center;
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+    
+}
+.students-steve-container a{
+    color: #1E1E1E;
+}
+.students-steve-container img{
+
+    justify-content: center;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    border: solid 5px var(--bg-secondary-dark);
+    border-radius: 15px;
+}
+
+.students-announcements{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    align-items: stretch;
+
+}
+
+
+#border-text{
+    grid-area: text ;
+}
+
+#students-picture{
+    grid-area: pictures ;
+
+}
+#students-wednesday{
+    grid-area: wednesday ;
+}
+#steve-container{
+    grid-area: steve;
+}
+#students-announcements-container{
+    grid-area: announcements;
+}
+
+
+
+
+
+
+
+
+
 /*==================================
         RESPONSIVE DESIGN
 ====================================*/
@@ -1224,4 +1402,49 @@ a:hover .hover-text {
         margin-left: 0px;
 
       }
+
+    .students-grid-container{
+  
+        grid-template-columns: 1fr;
+        grid-template-areas: 'text' 
+                             'pictures'
+                             'wednesday'  
+                             'steve' 
+                             'steve' 
+                             'announcements' ;
+        margin: 40px;
+        justify-content: center;
+    }
+    .border-text{
+        justify-self: center;
+        width: 90%;
+    }
+    .students p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .students h2{
+        text-align: center;
+    }
+
+    .students-steve-container img{
+        width: 90%;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+
+
+    }
+    .students-announcements{
+        width: 80%;
+    }
+    .students-picture{
+        width: 80%;
+    }
+    .students-wednesday-container{
+        width: 70%;
+        height: auto;
+        justify-self: center;
+    }
+
   }
