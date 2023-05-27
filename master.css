@@ -1136,9 +1136,265 @@ text-align: center;
 
 
 
+/*KIDZ*/
+#kidz-logo{
+    width: 480px;
+    height: auto;
+}
+
+.picture-head-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 520px;
+    border-bottom: 10px solid var(--bg-secondary-dark);
+}
+.picture-heads {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 65%;
+}
+.kidz-video-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-primary);
+    font-size: 32px;
+    text-shadow: 2px 2px black;
+}
+.kidz-video-text {
+    font-family: 'Microsoft New Tai Lue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 84px;
+    color: var(--bg-primary);
+}
 
 
 
+.kidz-grid-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+    grid-template-rows: auto;
+    margin: 40px 70px;
+    gap: 20px;
+    grid-template-areas: 'text pictures'
+                         'sunday  jessie'
+                         'wednesday announcements';
+
+}
+.border-text{
+align-self: center;
+/* Auto layout */
+font-size: 22px;
+font-weight: 700;
+display: flex;
+justify-self: left;
+align-items: center;
+width: 500px;
+height: auto;
+text-align: center;
+
+
+}
+
+.border-text p{
+    padding: 5px;
+    border: 5px solid #85C529;
+    border-radius: 15px;
+}
+
+.kidz .carousel{
+    display: relative;
+    overflow: hidden;
+}
+.carousel{
+    overflow: hidden;
+}
+
+.kidz-picture{
+    width: 600px;
+
+    justify-content: center;
+    height: 350px;    
+}
+
+.kidz-sunday{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+}
+.kidz h2 {
+    color: var(--bg-secondary-dark);
+}
+.kidz h5 {
+    color: var(--bg-secondary-dark);
+    font-size: 26px;
+}
+
+.kidz-sunday p {
+    font-family: 'Microsoft New Tai Lue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+
+.kidz .carousel{
+
+    border: solid 5px var(--bg-secondary-dark);
+    border-radius: 15px;
+}
+
+.kidz-jessie-container{
+    justify-self: center;
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+    
+}
+.kidz-jessie-container a{
+    color: #1E1E1E;
+}
+.kidz-jessie-container img{
+
+    justify-content: center;
+    padding: 0px;
+    height:500px;
+    border: solid 5px var(--bg-secondary-dark);
+    border-radius: 15px;
+}
+.kidz-announcements-container{
+    text-align: center;
+}
+
+.kidz-announcements{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    align-items: stretch;
+}
+
+
+
+#border-text{
+    grid-area: text ;
+}
+
+#kidz-picture{
+    grid-area: pictures ;
+
+}
+#kidz-sunday{
+    grid-area: sunday ;
+}
+#jessie-container{
+    grid-area: jessie;
+}
+#kidz-announcements-container{
+    grid-area: announcements;
+}
+#kidz-wednesday{
+    grid-area: wednesday;
+}
+
+
+.kidz-wednesday p {
+    font-family: 'Microsoft New Tai Lue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.kidz-wednesday{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width:450px;
+
+}
+
+.vbs-button{
+    display: inline-block;
+    padding: 18.75px;
+    width: 342.19px;
+    box-shadow: 0px 7.8125px 7.8125px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background-color: var(--bg-secondary-light);
+    color: var(--bg-primary);
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    
+    transition: all 0.3s ease-in-out; /* this will make the hover effect smoother */
+}
+.vbs-button:hover{
+    color: var(--bg-secondary-light);
+    background-color: var(--bg-primary);
+}
+.vbs-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:40px;
+    gap: 20px;
+
+}
+
+.vbs-img img{
+    flex-shrink: 2;
+    width: 500px;
+    height:auto;
+    border: var(--green-border);
+    border-radius: 15px;
+    background-color: var(--bg-secondary-dark);
+}
+.vbs-text{
+    text-align: center;
+    width:400px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.kidz-border-text{
+    align-self: center;
+    /* Auto layout */
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    width: 450px;
+    height: auto;
+    text-align: center;
+    }
+        
+    .kidz-border-text p{
+        padding: 5px;
+        border: 5px solid #85C529;
+        border-radius: 15px;
+    }    
 
 
 /*==================================
@@ -1432,7 +1688,10 @@ text-align: center;
     }
     .students p {
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
+    }
+    #students-motto{
+        font-size: 28px;
     }
     .students h2{
         text-align: center;
@@ -1443,8 +1702,6 @@ text-align: center;
         justify-self: center;
         justify-content: center;
         justify-items: center;
-
-
     }
     .students-announcements{
         width: 80%;
@@ -1459,5 +1716,30 @@ text-align: center;
     }
     .students-video-text-container img{
         width: 100px;
+    }
+    #students-logo{
+        width:60%
+    }
+    .kidz-grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .kidz-jessie-container img{
+        width: 95%;
+        height: auto;
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .vbs-img{
+        transform: scale(.8);
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
     }
   }
