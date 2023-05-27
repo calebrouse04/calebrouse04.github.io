@@ -22,7 +22,7 @@
       }  
 
 *{
-    font-family: 'Microsoft New Tai Lue'
+    font-family: 'Microsoft New Tai Lue';
 }  
 
 /*Navbar*/
@@ -1267,9 +1267,9 @@ text-align: center;
         display:grid;
         grid-template-columns: 1fr;
         height: auto;
-        width: 100%;
         margin: 20px;
         justify-content: center;
+        transform: scale(.7);
     }
     .initial-text{
         font-size: 46px;
@@ -1402,6 +1402,12 @@ text-align: center;
         margin-left: 0px;
 
       }
+
+       /*
+    ==========================================
+                    students
+    ==========================================
+    */
 
     .students-grid-container{
   
