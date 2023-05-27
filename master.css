@@ -17,10 +17,14 @@
 }
 @font-face {
         font-family: 'Anek Malayalam Medium';
-        src: url('AnekMalayalam-VariableFont_wdth,wght.ttf') format('ExtraBold');
+        src: url('fonts/AnekMalayalam-VariableFont_wdth,wght (2).ttf') format('ExtraBold');
         font-weight: 800;
       }  
-
+ @font-face {
+        font-family: 'Microsoft New Tai Lue';
+        src: url('fonts/ntailub_0.ttf') format('truetype');
+      }
+      
 *{
     font-family: 'Microsoft New Tai Lue';
 }  
@@ -171,7 +175,7 @@ body {
     height: 580px;
     border-bottom: 10px solid var(--bg-secondary-dark);
 }
-video {
+.home-video-container img{
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -1415,9 +1419,10 @@ text-align: center;
         grid-template-areas: 'text' 
                              'pictures'
                              'wednesday'  
+                             'announcements'
                              'steve' 
                              'steve' 
-                             'announcements' ;
+                              ;
         margin: 40px;
         justify-content: center;
     }
@@ -1452,5 +1457,7 @@ text-align: center;
         height: auto;
         justify-self: center;
     }
-
+    .students-video-text-container img{
+        width: 100px;
+    }
   }
