@@ -692,13 +692,17 @@ a:hover .hover-text {
 #mission{
     text-align: center;
 }
+.scripture-reference{
+    color: #265178;
+    text-align: left;
+}
 
 .belief-grid-container{
     display: grid;
     grid-auto-flow: dense;
     justify-content: center;
     grid-template-columns: repeat(2, minmax(200px,1fr));
-    align-items: center;
+
     column-gap: 2.1825em;
     margin: 20px 5%;
 }
@@ -715,7 +719,7 @@ a:hover .hover-text {
     text-align: center;
 }
 .belief-grid-item{
-    display: inline-block;
+    display: grid;
     border: var(--green-border);
     border-radius:15px ;
     text-align: center;
@@ -1403,6 +1407,7 @@ text-align: center;
 
 
 @media only screen and (max-width: 768px){
+
 
     .navbar img {
         display: flex;
