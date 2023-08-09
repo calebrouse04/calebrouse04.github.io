@@ -1399,32 +1399,39 @@ text-align: center;
         padding: 5px;
         border: 5px solid #85C529;
         border-radius: 15px;
+        align-self: center;
     }    
 
     .group-grid{
-        margin-top: 40px !important;
+        margin-top: 40px;
+        justify-items: center;
         display: grid;
-        
+        justify-content: center; 
+        margin: 40px;
+        width: fit-content;
         gap: 20px;
-        grid-template-rows: 400px;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr  1fr ;
         grid-template-areas: "picture text"
                                 "blue";
     }
     .life-group-img{
-        
-        display: grid;
         border: 5px solid var(--bg-secondary-dark);
         border-radius: var(--border-radius);
         grid-area: "picture";
         height: auto;
-        width: 400px;
+        width: 500px;
     }
     .group-text{
         padding: 5px;
-        border: var(--green-border);
+        height: auto;
         grid-area: "text";
+        align-self: center;
+        
+    }
+    .group-text p{
         border-radius: var(--border-radius);
+        border: var(--green-border);
+        padding: 5px;
     }
     .group-text-blue{
         border:var(--green-border);
@@ -1432,6 +1439,19 @@ text-align: center;
         color: var(--bg-primary);
         grid-area: "blue";
         border-radius: var(--border-radius);
+        padding: 5px;
+        text-align: center;
+
+    }
+    .group-flex{
+        display: flex;
+        margin: 20px 40px;
+    }
+    .group-h{
+        font-size: 48px;
+        color: var(--bg-secondary-dark);
+        text-align: center;
+        font-family: "Microsoft New Tai Lue", "Helvetica";
     }
 /*==================================
         RESPONSIVE DESIGN
@@ -1778,5 +1798,12 @@ text-align: center;
         justify-content: center;
         justify-self: center;
         justify-items: center;
+    }
+
+
+    .group-grid{
+        grid-template-columns: 1fr  ;
+        grid-template-areas: "picture" "text"
+                                "blue";
     }
   }
