@@ -25,15 +25,6 @@ const pastors = [
         email: 'steve@faithchurchgallatin.org',
         email_img: 'All Pictures/Email Steve.png',
         bio: 'Steven was born and raised in Gallatin and in the church. He is a gifted worship leader, and preacher. However, the passion of his heart is families. Steven is married to Niki and they have three children; Callie Beth, Carsen, and Camden. His hobbies are any and all sports, reading, and listening to music'
-    },
-    {
-        name: 'Marlin Stroop',
-        age: '100',
-        picture: 'All Pictures/Our Staff - Marlin Stroop.jpg',
-        title: 'Facility Manager',
-        email: 'marlin@faithchurchgallatin.org',
-        email_img: 'All Pictures/Email Marlin.png',
-        bio: 'cool dude'
     }
 ];
 
