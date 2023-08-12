@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Home Page"
+    files:
+      - label: "Main Content"
+        name: "home"
+        file: "index.html"
+        fields:
+          - { label: "B-Roll Image", name: "b_roll_image", widget: "image" }
+          - { label: "Video Text 1", name: "video_text_1", widget: "string" }
+          - { label: "Video Text 2", name: "video_text_2", widget: "string" }
+          - { label: "Connect Button Link", name: "connect_button_link", widget: "string" }
+
+          - label: "Carousel Items"
+            name: "carousel"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "carousel_image", widget: "image" }
+              
+          - { label: "Sunday Service Info", name: "sunday_service_info", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Youtube Link", name: "youtube_link", widget: "string" }
+          - { label: "Facebook Link", name: "facebook_link", widget: "string" }
+          - { label: "Email Link", name: "email_link", widget: "string" }
+          - { label: "Youtube Icon", name: "youtube_icon", widget: "image" }
+          - { label: "Facebook Icon", name: "facebook_icon", widget: "image" }
+          - { label: "Email Icon", name: "email_icon", widget: "image" }
+          - { label: "Google Maps Link", name: "google_maps_link", widget: "string" }
+
+          - label: "Bottom Row Items"
+            name: "bottom_row"
+            widget: "list"
+            fields:
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Image", name: "bottom_row_image", widget: "image" }
+              - { label: "Initial Text", name: "initial_text", widget: "string" }
+              - { label: "Hover Text", name: "hover_text", widget: "string" }
+
+
+
