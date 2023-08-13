@@ -8,7 +8,6 @@ public_folder: "/uploads"
 collections:
   - name: "home"
     label: "Home Page"
-    folder: "../"
     files:
       - label: "Main Content"
         name: "home"
