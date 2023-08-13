@@ -11,12 +11,11 @@ collections:
     files:
       - label: "Main Content"
         name: "home"
-        file: "../index.html"
+        file: "https://github.com/calebrouse04/calebrouse04.github.io/blob/1da28537238d207486979cbd203c12b29caebb38/index.html"
         fields:
           - { label: "B-Roll Image", name: "b_roll_image", widget: "image" }
           - { label: "Video Text 1", name: "video_text_1", widget: "string" }
           - { label: "Video Text 2", name: "video_text_2", widget: "string" }
-          - { label: "Connect Button Link", name: "connect_button_link", widget: "string" }
 
           - label: "Carousel Items"
             name: "carousel"
