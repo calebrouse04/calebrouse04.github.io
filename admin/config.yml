@@ -23,25 +23,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Image", name: "carousel_image", widget: "image" }
-              
-          - { label: "Sunday Service Info", name: "sunday_service_info", widget: "string" }
-          - { label: "Address", name: "address", widget: "string" }
-          - { label: "Youtube Link", name: "youtube_link", widget: "string" }
-          - { label: "Facebook Link", name: "facebook_link", widget: "string" }
-          - { label: "Email Link", name: "email_link", widget: "string" }
-          - { label: "Youtube Icon", name: "youtube_icon", widget: "image" }
-          - { label: "Facebook Icon", name: "facebook_icon", widget: "image" }
-          - { label: "Email Icon", name: "email_icon", widget: "image" }
-          - { label: "Google Maps Link", name: "google_maps_link", widget: "string" }
 
-          - label: "Bottom Row Items"
-            name: "bottom_row"
-            widget: "list"
-            fields:
-              - { label: "Link", name: "link", widget: "string" }
-              - { label: "Image", name: "bottom_row_image", widget: "image" }
-              - { label: "Initial Text", name: "initial_text", widget: "string" }
-              - { label: "Hover Text", name: "hover_text", widget: "string" }
 
 
 

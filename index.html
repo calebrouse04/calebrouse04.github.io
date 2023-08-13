@@ -119,78 +119,85 @@
 </div>
 <br>
 
+<!--LINE-->
 <div class="line"></div>
 
+  <!--IGNORE THIS-->
 <div class="scroll-element" data-aos="fade-up" data-aos-duration="1000">
 
-  <div class= 'home-grid-container'>
-      <div class="home-grid-left">
-          <div id="service-container">
-              <div class="card" id="services" >
-                  <p><strong>{{ sunday_service_info }}</strong></p>
-                  <p>{{ address }}</p>
-              </div>
-          </div>
-
-          <div class="subrow">
-              <div class="subrow-flex">
-
-                  <div class="card column-media card1" id = 'youtube-container'>
-                      <a href="{{ youtube_link }}" target="_blank">
-                          <img src="{{ youtube_icon }}" class = 'home-youtube' class="card-img" alt="...">
-                      </a>
-                  </div>
-
-                  <div class="card column-media card1" id = 'facebook-container'>
-                      <a href="{{ facebook_link }}" target="_blank">
-                          <img src="{{ facebook_icon }}" class = 'home-facebook'class="card-img" alt="...">
-                      </a>
-                  </div>
-
-                  <div class="card card1 column-media" id="email-container">
-                      <a href="mailto:{{ email_link }}" target="_blank">
-                          <img src="{{ email_icon }}" class = 'home-email' class="card-img" alt="...">
-                      </a>
-                  </div>
-
-              </div>
-          </div>
+<!--GRID CONTAINER-->
+<div class= 'home-grid-container'>
+  <!--LEFT SIDE GRID-->
+  <div class="home-grid-left">
+  <!--SERVICE SECTIONS-->
+    <div id="service-container">
+      <div class="card" id="services" >
+        <p><strong>Sundays at 8:30 and 10:30AM</strong></p>
+        <p>639 S. Water Ave.<br>Gallatin, TN 37066</p>
       </div>
-
-      <div class="home-grid-right">
-          <iframe id="maps" src="{{ google_maps_link }}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+    <!--MEDIA SUBROW-->
+    <div class="subrow">
+  <!--MEDIA FLEX CONTAINER-->
+      <div class="subrow-flex">
+    <!--YOUTUBE CONTAINER-->
+        <div class="card column-media card1" id = 'youtube-container'>
+          <a href="https://www.youtube.com/@FaithChurchGallatin" target="_blank">
+            <img src="All Pictures/Home Page - Youtube Icon.png" class = 'home-youtube' class="card-img" alt="...">
+          </a>
+        </div>
+  <!--FACEBOOK CONTAINER-->
+        <div class="card column-media card1" id = 'facebook-container'>
+          <a href = 'https://www.facebook.com/faithchurchgallatin' target="_blank">
+            <img src="All Pictures/Home Page - Facebook Icon.png" class = 'home-facebook'class="card-img" alt="...">
+          </a>
+        </div>
+  <!--EMAIL CONTAINER-->
+        <div class="card card1 column-media" id="email-container">
+          <a href="mailto:office@faithchurchgallatin.org" target="_blank">
+            <img src="All Pictures/Home Page - Email Icon.png" class = 'home-email' class="card-img" alt="...">
+          </a>
+        </div>
       </div>
-
+    </div>
+  </div>
+    <div class="home-grid-right">
+  <!--MAPS-->
+    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.7672692705146!2d-86.4413098!3d36.37927240000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88643a9ec993908b%3A0x911f42ae3593bb6c!2sFaith%20Church%20of%20Gallatin!5e0!3m2!1sen!2sus!4v1671825127382!5m2!1sen!2sus" 
+  allowfullscreen="" loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
   </div>
 </div>
-
+<!--LINE-->
 <div class="line"></div>
 
+<!--BOTTOM ROW-->
 <div id = "bottomhomerow" >
-
-  <a href="{{ bottom_row[0].link }}" class="image-link">
-      <img class="img-thumbnail home-row " src="{{ bottom_row[0].bottom_row_image }}" alt="Image" >
-      <div class="text-overlay">
-          <p class="initial-text">{{ bottom_row[0].initial_text }}</p>
-          <p class="hover-text">{{ bottom_row[0].hover_text }}</p>
-      </div>
-  </a>
-
-  <a href="{{ bottom_row[1].link }}" class="image-link">
-      <img class="img-thumbnail home-row " src="{{ bottom_row[1].bottom_row_image }}">
-      <div class="text-overlay">
-          <p class="initial-text">{{ bottom_row[1].initial_text }}</p>
-          <p class="hover-text">{{ bottom_row[1].hover_text }}</p>
-      </div>
-  </a>
+<!--LINK TO NEW-->
+    <a href="new.html#connect" class="image-link">
+      <img class="img-thumbnail home-row " src="All Pictures/Home Page -  Connect Tile(color).jpg" alt="Image" >
+        <div class="text-overlay">
+          <p class="initial-text" >Connect</p>
+          <p class="hover-text" >Tell us about yourself!</p>
+        </div>
+    </a>
+<!--LINK TO STAFF-->
+    <a href="staff.html" class="image-link">
+      <img class="img-thumbnail home-row " src="All Pictures/Home Page - Staff Tile(Color).jpeg" >
+        <div class="text-overlay">
+          <p class="initial-text" >Leadership</p>
+          <p class="hover-text" >Get to know us!</p>
+        </div>
+    </a>
 <!--LINK TO GROUP LIFE-->
-<a href="{{ bottom_row[2].link }}" class="image-link">
-  <img class="img-thumbnail home-row " src="{{ bottom_row[1].bottom_row_image }}">
-  <div class="text-overlay">
-      <p class="initial-text">{{ bottom_row[1].initial_text }}</p>
-      <p class="hover-text">{{ bottom_row[1].hover_text }}</p>
-  </div>
-</a>
+  <a href="groups.html" class="image-link">
+      <img class="img-thumbnail home-row" src="All Pictures/Home Page - Life Group(color).jpg" >
+      <div class="text-overlay" >
+          <p class="initial-text" >Group Life</p>
+          <p class="hover-text" >Get plugged in!</p>
+      </div>
+  </a>
 </div>
   <br>
   <br>
