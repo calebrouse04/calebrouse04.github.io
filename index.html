@@ -11,23 +11,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="master.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    
-        <!-- ... your other head tags ... -->
-        <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/showdown@1.10.7/dist/showdown.min.js"></script>
-    
-
   </head>
 <body class="homepage">
-  <script id="frontMatter" type="text/yaml">
-    ---
-    b_roll_image: /uploads/img_3830.png
-    video_text_1: Sundays 8:30 & 10:30
-    video_text_2: Come Join Us!
-    carousel:
-      - carousel_image: /uploads/frame-157.png
-    ---
-    </script>
+
 <!-- Lime Green = #85c529  
   Navy = #003360 
   White = #FCFCFC 
@@ -120,14 +106,7 @@
           </div>
           <!-- Add more slides dynamically -->
       </div>
-      <script>
-        const yamlContent = document.getElementById('frontMatter').textContent;
-        const data = jsyaml.load(yamlContent);
-    
-        document.querySelector('img[src="{{ b_roll_image }}"]').src = data.b_roll_image;
-        document.querySelector('.home-video-text:first-child').textContent = data.video_text_1;
-        document.querySelector('.home-video-text:last-child').textContent = data.video_text_2;
-    </script>
+
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
