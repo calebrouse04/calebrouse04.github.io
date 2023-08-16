@@ -11,7 +11,7 @@ collections:
     files:
       - label: "Main Content"
         name: "home"
-        file: "index.html"
+        file: "/index.html"
         fields:
           - { label: "B-Roll Image", name: "b_roll_image", widget: "image" }
           - { label: "Video Text 1", name: "video_text_1", widget: "string" }

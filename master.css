@@ -807,7 +807,9 @@ a:hover .hover-text {
     align-items: center;
     letter-spacing: 0.05em;
 }
-
+#restoration{
+    margin: 60px;
+}
 /*Im new page*/
 .newpage h6{
     font-family: 'Microsoft New Tai Lue';
@@ -866,9 +868,12 @@ a:hover .hover-text {
     text-align: center;
     justify-content: center;
 }
-#expect-img{
+.expect-img{
     width: 100%;
     height: 100%;
+}
+#expect-img{
+    width:800px
 }
 .new-grid2-container{
     display: flex;

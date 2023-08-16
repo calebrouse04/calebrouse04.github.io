@@ -1,10 +1,3 @@
----
-b_roll_image: /uploads/img_3830.png
-video_text_1: Sundays at 8:30 & 10:30
-video_text_2: Come Join Us
-carousel:
-  - carousel_image: /uploads/frame-157.png
----
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,6 +9,7 @@ carousel:
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="master.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
   </head>
 <body class="homepage">
 
@@ -88,11 +82,11 @@ carousel:
 <div class="home-video-container">
 
   <!-- B-ROLL CHANGE HERE -->
-  <img src="{{ b_roll_image }}">
+  <img src="All Pictures/IMG_3830.png">
 
   <div class="home-video-text-container">
-      <h2 class="home-video-text">{{ video_text_1 }}</h2>
-      <h2 class="home-video-text">{{ video_text_2 }}</h2>
+      <h2 class="home-video-text">Sundays at 8:30 & 10:30</h2>
+      <h2 class="home-video-text">Come Join Us!</h2>
       <a href="new.html#connect"><button class="home-video-button">Connect with us</button></a>
   </div>
 </div>
@@ -107,7 +101,7 @@ carousel:
       <div class="carousel-inner">
           <!-- You will loop through the carousel items, it may require additional templating logic depending on the integration -->
           <div class="carousel-item active">
-              <img src="{{ carousel[0].carousel_image }}" class="d-block w-100" alt="...">
+              <img src="All Pictures/Streaming Announcement Slide.png" class="d-block w-100" alt="...">
           </div>
           <!-- Add more slides dynamically -->
       </div>

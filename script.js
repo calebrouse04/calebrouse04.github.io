@@ -6,7 +6,7 @@ const pastors = [
         title: 'Lead Pastor',
         email: 'chris@faithchurchgallatin.org',
         email_img: 'All Pictures/Email Chris.png',
-        bio: "Born into a Southern Baptist pastor’s home, honored to be the husband to Angela, and the father of Alayna (and husband, Beau), Caleb, and Ava. Most recently and joyfully, he serves as “Chief” to his granddaughter, Addie Rose. Pastor Chris loves all sports and is a die-hard Kentucky Wildcat and Dallas Cowboy fan. He loves to read, watch movies, and play outside with the kids."
+        bio: "Born into a Southern Baptist pastor’s home, honored to be the husband to Angela, and the father of Alayna (and husband, Beau), Caleb, and Ava. Most recently and joyfully, he serves as “Chief” to his granddaughters, Addie and Emmie. Pastor Chris loves all sports and is a die-hard Kentucky Wildcat and Dallas Cowboy fan. He loves to read, watch movies, and play outside with the grandkids."
     },
     {
         name: 'Billy Fuqua',
@@ -27,6 +27,7 @@ const pastors = [
         bio: 'Steven was born and raised in Gallatin and in the church. He is a gifted worship leader, and preacher. However, the passion of his heart is families. Steven is married to Niki and they have three children; Callie Beth, Carsen, and Camden. His hobbies are any and all sports, reading, and listening to music'
     }
 ];
+
 
 // JavaScript
 pastors.forEach((pastor, index) => {
@@ -54,6 +55,7 @@ pastors.forEach((pastor, index) => {
         </div>
     </div>
 `;
+
 
 
     staffCards.appendChild(cardFlip);
