@@ -696,7 +696,9 @@ a:hover .hover-text {
     color: #265178;
     text-align: left;
 }
-
+#statement{
+    margin: 20px 80px;
+}
 .belief-grid-container{
     display: grid;
     grid-auto-flow: dense;
@@ -884,31 +886,43 @@ a:hover .hover-text {
     align-items: center;
 }
 
-.order{
-    display: flex;
-    justify-content: center;
-    text-align: left;
+
+.order {
+    text-align: left;  
+    display: grid;
+    margin: 80px ;
+    gap:20px ;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 18px;
+    grid-template-areas: 'time music' 
+                         'wear kids';                
+}
+.order h5 {
+    color: var(--bg-secondary-dark);
+}
+
+#new-time{
+    grid-area: 'time';
+}
+#new-music{
+    grid-area: 'music';
+}
+#new-wear{
+    grid-area: 'wear';
+}
+#new-kids{
+    grid-area: 'kids';
 }
 .order ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
-.order ul li {
+.order h5{
     background: url('All Pictures/Polygon 4.png') no-repeat left center;
     background-size: 22px;
     padding-left: 40px; /* adjust as needed depending on the image size */
-    font-family: 'Microsoft New Tai Lue';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 80px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
 }
 .contact-container {
     display: flex;
@@ -1458,14 +1472,40 @@ text-align: center;
         text-align: center;
         font-family: "Microsoft New Tai Lue", "Helvetica";
     }
+    .jr-li{
+        font-size: 18px;
+    }
+
+.pdo-box{
+    width: 600px;
+    height: 400px;
+    border: var(--bg-secondary-dark) 5px solid;
+    border-radius: var(--border-radius);
+    background-color: #265178;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+}
+.pdo-box h6{
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--bg-primary);
+    text-align: center;
+    font-family: 'Anek Malayalam';
+
+}
 /*==================================
         RESPONSIVE DESIGN
 ====================================*/
 
 
 @media only screen and (max-width: 768px){
-
-
+    .pdo-box h6{
+        font-size: 23px;
+    }
     .navbar img {
         display: flex;
         text-align: center;
@@ -1693,8 +1733,7 @@ text-align: center;
                             'text';
         row-gap: 20px;
     }
-
-    .order ul li {
+    .order{
         font-size: 12px;
     }
     
