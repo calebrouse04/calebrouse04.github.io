@@ -1497,6 +1497,10 @@ text-align: center;
     font-family: 'Anek Malayalam';
 
 }
+.pdo-sect{
+    border: var(--bg-secondary-dark) solid 5px ;
+    border-radius: var(--border-radius);
+}
 /*==================================
         RESPONSIVE DESIGN
 ====================================*/
