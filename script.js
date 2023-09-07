@@ -68,5 +68,46 @@ bioButtons.forEach((button) => {
 });
 
 });
+//new staff needs to be added to the grid
+const staff = [{
+    name: 'Dave McBrdide',
+    picture: 'All Pictures/Dave Headshot.png',
+    title: 'Financial Advisor'
+},
+{
+    name:'Jennifer Clark',
+    picture: 'All Pictures/Jennifer Headshot.png',
+    title: 'PDO Director'
+},
+{
+    name:'Shana Wirt',
+    picture: 'All Pictures/Shana Headshot 1.png',
+    title: "Childrens Director"
+},
+{
+    name: 'Ashley Sadler',
+    picture: 'All Pictures/Ashley Headshot.png',
+    title: 'administrative assistant'
+}
+];
 
+staff.forEach((staffMember, index) => {
+    let cardFlip = document.createElement('div');
+    cardFlip.className = 'cardFlip';
+    cardFlip.id = staffMember.name.toLowerCase().replace(' ', '-'); 
+    cardFlip.innerHTML = `
+        <div class="card-flip">
+            <div class="card-front">
+                <img src="${staffMember.picture}" class="card-img-top" alt="Picture of ${staffMember.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${staffMember.name}</h5>
+                    <h5 class="card-text">${staffMember.title}</h5>
+                </div>
+            </div>
+        </div>
+    `;
+    staff_card.appendChild(cardFlip);
+    // append cardFlip to a container element in your HTML, for instance:
+    // document.querySelector('.container').appendChild(cardFlip);
+});
 
