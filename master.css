@@ -1679,6 +1679,9 @@ text-align: center;
     #staff_card{
         grid-template-columns: 2fr;
     }
+    .card-back .card-body p {
+        font-size: 18px;
+    }
 
 /*
 ==========================================
