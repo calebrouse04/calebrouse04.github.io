@@ -87,7 +87,7 @@ const staff = [{
 {
     name: 'Ashley Sadler',
     picture: 'All Pictures/Ashley Headshot.png',
-    title: 'administrative assistant'
+    title: 'Administrative Assistant'
 }
 ];
 
